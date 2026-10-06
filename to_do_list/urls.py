@@ -20,5 +20,8 @@ from do_list import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('list/',views.do_list)
+    path('api/tasks/', views.task),
+    path('api/tasks/create/', views.create),
+    path('api/tasks/done/', views.done),
+    path('api/tasks/delete/', views.delete),
 ]
